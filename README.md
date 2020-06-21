@@ -1,13 +1,12 @@
 [![MIT
 license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 [![Build
-Status](https://travis-ci.com/tanfonto/storx2.svg?branch=master)](https://travis-ci.com/tanfonto/storx2) [![Coverage Status](https://coveralls.io/repos/github/tanfonto/storx2/badge.svg?branch=master)](https://coveralls.io/github/tanfonto/storx2?branch=master)
-[![CodeFactor](https://www.codefactor.io/repository/github/tanfonto/storx2/badge)](https://www.codefactor.io/repository/github/tanfonto/storx2)
+Status](https://travis-ci.org/rethree/storx.svg?branch=master)](https://travis-ci.org/rethree/storx) [![Coverage Status](https://coveralls.io/repos/github/rethree/storx/badge.svg?branch=master)](https://coveralls.io/github/rethree/storx?branch=master)
+[![CodeFactor](https://www.codefactor.io/repository/github/rethree/storx/badge)](https://www.codefactor.io/repository/github/rethree/storx)
 [![dependencies
-Status](https://david-dm.org/tanfonto/storx2/status.svg)](https://david-dm.org/tanfonto/storx2) [![devDependencies Status](https://david-dm.org/tanfonto/storx2/dev-status.svg)](https://david-dm.org/tanfonto/storx2?type=dev)
-[![Built with Spacemacs](https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg)](http://spacemacs.org)
+Status](https://david-dm.org/rethree/storx/status.svg)](https://david-dm.org/rethree/storx) [![devDependencies Status](https://david-dm.org/rethree/storx/dev-status.svg)](https://david-dm.org/rethree/storx?type=dev)
 
-# Storx(2)
+# Storx
 
 [RxJS](https://github.com/ReactiveX/RxJS)-based state management. Borrows concepts from [Redux](https://github.com/reduxjs/redux), [Effector](https://github.com/zerobias/effector) and few others
 but targets minimalism and strong RxJS reliance rather than custom internals.
@@ -27,13 +26,13 @@ This is a revamped version of [Storx](https://github.com/tanfonto/storx). Differ
 ### Installation
 
 ```
-npm i @tanfonto/storx2
+npm i @recubed/storx
 ```
 
 or
 
 ```
-yarn add @tanfonto/storx2
+yarn add @recubed/storx
 ```
 
 ### API
@@ -41,7 +40,7 @@ yarn add @tanfonto/storx2
 - `Store` creation
 
 ```typescript
-import { Store, EventStream, Effect, select } from '@tanfonto/storx2';
+import { Store, EventStream, Effect, select } from '@recubed/storx';
 import { skip } from 'rxjs/operators';
 
 const eventStream = EventStream('some-event');

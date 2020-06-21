@@ -1,6 +1,6 @@
 {
-  "name": "@tanfonto/storx2",
-  "version": "0.1.0",
+  "name": "@recubed/storx",
+  "version": "0.9.9",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,12 +16,13 @@
   ],
   "license": "MIT",
   "files": [
-    "dist/**/*"
+    "dist/**/*.d.ts",
+    "dist/**/*.js"
   ],
   "publishConfig": {
     "access": "public"
   },
-  "repository": "https://github.com/tanfonto/storx2",
+  "repository": "https://github.com/rethree/storx",
   "scripts": {
     "lint": "eslint -c .eslintrc.js 'lib/**/*.ts'",
     "build": "tsc -p tsconfig.build.json",
@@ -42,7 +43,7 @@
     "rxjs": "^6.5.4",
     "ts-jest": "^25.0.0",
     "ts-node": "^8.3.0",
-    "typescript": "3.7"
+    "typescript": "^3.9.5"
   },
   "peerDependencies": {
     "rxjs": "^6.5.4"
