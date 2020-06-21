@@ -1,5 +1,5 @@
-import EventStream from '../lib/events';
-import Store from '../lib/store';
+import EventStream from '../src/events';
+import Store from '../src/store';
 
 test('effectless events do not trigger store update', () => {
   const state = {};

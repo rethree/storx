@@ -1,6 +1,6 @@
-import Effect from '../lib/effects';
-import EventStream from '../lib/events';
-import Store from '../lib/store';
+import Effect from '../src/effects';
+import EventStream from '../src/events';
+import Store from '../src/store';
 
 test('commands are executed', () => {
   const out: any[] = [];

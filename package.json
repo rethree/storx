@@ -24,7 +24,7 @@
   },
   "repository": "https://github.com/rethree/storx",
   "scripts": {
-    "lint": "eslint -c .eslintrc.js 'lib/**/*.ts'",
+    "lint": "eslint -c .eslintrc.js 'lib/src/*.ts'",
     "build": "tsc -p tsconfig.build.json",
     "test": "jest",
     "test:dev": "yarn test --no-cache",

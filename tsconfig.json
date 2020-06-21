@@ -19,6 +19,8 @@
     "diagnostics": true,
     "sourceMap": true
   },
-  "include": ["lib", "tests"],
+  "include": [
+    "lib"
+  ],
   "exclude": ["dist"]
 }

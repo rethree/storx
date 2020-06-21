@@ -1,6 +1,6 @@
 import { skip } from 'rxjs/operators';
-import EventStream from '../lib/events';
-import Store, { select, withReason } from '../lib/store';
+import EventStream from '../src/events';
+import Store, { select, withReason } from '../src/store';
 
 test('event messages are dispatched to stream', done => {
   const eventStream = EventStream('some-event');
