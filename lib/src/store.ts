@@ -3,7 +3,7 @@ import {
   combineLatest,
   merge,
   pipe,
-  OperatorFunction
+  OperatorFunction, Observable
 } from 'rxjs';
 import { filter, distinctUntilChanged, map } from 'rxjs/operators';
 import { Event, EventStream, Store } from './types';
@@ -38,10 +38,12 @@ export default <S>(
   };
 };
 
-export const withReason = <S>(store: Store<S>) =>
+export const withReason = <S>(store: Store<S>): Observable<[S, Event<S, unknown> ]> =>
   combineLatest(
-    store.state,
-    store.allEvents.pipe(filter(x => x.status === 'ok'))
+    [
+      store.state,
+      store.allEvents.pipe(filter(x => x.status === 'ok'))
+    ]
   );
 
 export const select = <T, R>(
